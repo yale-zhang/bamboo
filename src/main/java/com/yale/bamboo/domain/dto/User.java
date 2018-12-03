@@ -1,4 +1,4 @@
-package com.yale.bamboo.entity.dto;
+package com.yale.bamboo.domain.dto;
 
 public class User {
 
