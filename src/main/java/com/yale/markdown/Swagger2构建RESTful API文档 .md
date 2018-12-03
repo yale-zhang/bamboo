@@ -11,4 +11,6 @@
 
 4.API文档访问与调试  
     http://localhost:8080/swagger-ui.html
+    
+[SpringBoot 使用Swagger2打造在线接口文档（附汉化教程）](https://www.jianshu.com/p/7e543f0f0bd8)
  
