@@ -1,0 +1,1 @@
+org.springframework.context.ApplicationListener=com.yale.bamboo.EventLog.ApplicationPreparedEventListener,com.yale.bamboo.EventLog.ApplicationReadyEventListener,com.yale.bamboo.EventLog.ApplicationStartedEventListener
