@@ -1,29 +1,10 @@
 package com.yale.bamboo.entity.dto;
 
-import org.hibernate.annotations.Entity;
-import org.springframework.data.annotation.Id;
+public class User {
 
-import javax.persistence.Column;
-import javax.persistence.GeneratedValue;
-import java.io.Serializable;
-
-@Entity
-public class User implements Serializable {
-    @Id
-    @GeneratedValue
     private Long id;
-    @Column(name = "name", nullable = false)
     private String name;
-    @Column(nullable = false)
     private int age;
-    @Column(nullable = false)
-    private String pwd;
-    public User(){}
-    public User(String name, int age, String pwd) {
-        this.name = name;
-        this.age = age;
-        this.pwd = pwd;
-    }
 
     public Long getId() {
         return id;
@@ -47,13 +28,5 @@ public class User implements Serializable {
 
     public void setAge(int age) {
         this.age = age;
-    }
-
-    public String getPwd() {
-        return pwd;
-    }
-
-    public void setPwd(String pwd) {
-        this.pwd = pwd;
     }
 }
