@@ -5,3 +5,4 @@
   4. [Swagger2构建RESTful API文](src/main/java/com/yale/markdown/Swagger2构建RESTful%20API文档%20.md)
   
     
+[![Build Status](https://travis-ci.org/yale-zhang/bamboo.svg?branch=master)](https://travis-ci.org/yale-zhang/bamboo)

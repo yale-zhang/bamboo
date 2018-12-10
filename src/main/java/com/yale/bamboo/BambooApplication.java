@@ -1,10 +1,7 @@
 package com.yale.bamboo;
 
-import lombok.extern.slf4j.Slf4j;
-import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.annotation.Bean;
 
 @SpringBootApplication
 public class BambooApplication {
@@ -12,7 +9,7 @@ public class BambooApplication {
 		SpringApplication.run(BambooApplication.class, args);
 	}
 
-	@Bean
+	/*@Bean
 	public DataLoader dataLoader(){
 		return new DataLoader();
 	}
@@ -22,6 +19,6 @@ public class BambooApplication {
 		public void run(String... strings) throws Exception {
 			log.info("Loading data...");
 		}
-	}
+	}*/
 
 }
