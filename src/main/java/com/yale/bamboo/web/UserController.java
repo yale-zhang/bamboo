@@ -17,6 +17,7 @@ public class UserController {
     //创建线程安全的map
     static Map<Long, User> users = Collections.synchronizedMap(new HashMap<Long, User>());
 
+
     @ApiOperation(value = "获取用户列表",notes = "")
     @RequestMapping(value = "/",method = RequestMethod.GET)
     public List<User> getUserList(){
