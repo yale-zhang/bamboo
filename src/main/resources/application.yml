@@ -1,10 +1,16 @@
 ## 数据源配置
 spring:
-  datasource:
+  datasource.primary:
     url: jdbc:mysql://localhost:3306/mytestdb?serverTimezone=UTC&useSSL=false&allowPublicKeyRetrieval=true
     username: root
-    password: 123456
-    driver-class-name: com.mysql.cj.jdbc.Driver
+    password: root
+    driver-class-name: com.mysql.jdbc.Driver
+
+  datasource.secondary:
+    url: jdbc:mysql://localhost:3306/mytestdb2?serverTimezone=UTC&useSSL=false&allowPublicKeyRetrieval=true
+    username: root
+    password: root
+    driver-class-name: com.mysql.jdbc.Driver
 
   jpa:
     hibernate.ddl-auto: update
