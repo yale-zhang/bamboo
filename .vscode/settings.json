@@ -6,6 +6,6 @@
         "**/bower_components": true,
         "**/target": true,
         "**/logs": true
-    },//全局搜索忽略文件夹，搜索文件时常常需要忽略target文件
+    }
 
 }

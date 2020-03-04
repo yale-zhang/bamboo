@@ -9,16 +9,4 @@ public class BambooApplication {
 		SpringApplication.run(BambooApplication.class, args);
 	}
 
-	/*@Bean
-	public DataLoader dataLoader(){
-		return new DataLoader();
-	}
-	@Slf4j
-	static class DataLoader implements CommandLineRunner {
-		@Override
-		public void run(String... strings) throws Exception {
-			log.info("Loading data...");
-		}
-	}*/
-
 }

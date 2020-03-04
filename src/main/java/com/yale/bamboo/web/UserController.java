@@ -11,7 +11,7 @@ import java.util.*;
 
 @Api(value="/users", tags="用户接口模块")
 @RestController
-@RequestMapping("value=/users")
+@RequestMapping("/users")
 public class UserController {
 
     //创建线程安全的map
@@ -27,7 +27,7 @@ public class UserController {
 
 
     @RequestMapping(value="/", method=RequestMethod.POST)
-    public String postUser(@ModelAttribute User user) {
+    public String postUser(@RequestParam User user) {
         // 处理"/users/"的POST请求，用来创建User
         // 除了@ModelAttribute绑定参数之外，还可以通过@RequestParam从页面中传递参数
         users.put(user.getId(), user);
@@ -52,7 +52,7 @@ public class UserController {
     public String putUser(@PathVariable Long id, @ModelAttribute User user) {
         // 处理"/users/{id}"的PUT请求，用来更新User信息
         User u = users.get(id);
-        u.setName(user.getName());
+        u.setUsername(user.getUsername());
         u.setAge(user.getAge());
         users.put(id, u);
         return "success";
